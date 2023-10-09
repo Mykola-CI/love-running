@@ -70,12 +70,12 @@ nav {
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
 }
 
-#nav-toggle {   
-  display: none;  /* make checkbox hidden leaving only label to execute toggle */
+#nav-toggle {
+  display: none; /* make checkbox hidden leaving only label to execute toggle */
 }
 
 .nav-toggle-label {
@@ -87,6 +87,7 @@ main {
   background-color: lightblue;
   /* make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
+  margin-top: 47px;
 }
 
 /* Footer */
