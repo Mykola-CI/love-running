@@ -167,7 +167,7 @@ main {
 
 /* Meetup Times section */
 #times {
-  background: url('../images/dublin-city.webp') no-repeat center/cover;
+  background: url("../images/dublin-city.webp") no-repeat center/cover;
   /* Handles responsivity without the need for a media query */
   display: flex;
   flex-wrap: wrap;
@@ -175,7 +175,7 @@ main {
 
 #times div {
   color: #fafafa;
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   text-align: center;
   /* This will not wrap on screens of less than 400px wide.
@@ -214,6 +214,14 @@ main {
   font-size: 160%;
   padding: 5%;
   color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 
 /* Media query: tablets and larger (768px plus) */
@@ -274,11 +282,21 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /* Gallery */
+  #photos {
+    column-count: 3;
+  }
 }
 /* Large devices (laptops and desktops, 992px and up */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+
+  /* Gallery */
+  #photos {
+    column-count: 4;
   }
 }
 
