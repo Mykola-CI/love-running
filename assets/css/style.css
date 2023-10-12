@@ -122,6 +122,10 @@ main {
   margin: 20px auto;
 }
 
+/* #reasons > h1 {
+  text-align: center;
+} */
+
 #reasons h2 {
   margin-bottom: 20px;
   text-align: center;
@@ -247,12 +251,13 @@ main {
 
 @media screen and (min-width: 1200px) {    
   /* Reasons section */
+
   #benefits {
       display: flex;
       flex-direction: row;
   }
 
-  #benefits > div {
+  #benefits > div { 
       flex: 1;
   }
 
